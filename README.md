@@ -1,5 +1,7 @@
 # PondPad
 
+<img width="680" height="499" alt="image" src="https://github.com/user-attachments/assets/d2c31f5c-e86c-48db-9452-3f9c9da7f46b" />
+
 Hello Everyone! PondPad is a custom arcade-style macropad built using a Seeed XIAO ESP32-C3. It uses 5 button, a TFT display and Bluetooth for quick shortcut, media, and text actions.
 
 ## Project contents
@@ -25,16 +27,14 @@ The current PCB is designed around:
 
 | Name | Qty | Price | Buy Link |
 | --- | ---: | --- | --- |
-| Cherry MX switch | 5 | $8.75 | [https://www.aliexpress.com/item/1005002162885278.html](Aliexpress) |
-| XIAO ESP32-C3 | 1 | $12.00 | [https://www.aliexpress.com/item/1005007469761633.html](Aliexpress) |
+| Cherry MX switch | 5 | $8.75 | https://www.aliexpress.com/item/1005002162885278.html |
+| XIAO ESP32-C3 | 1 | $12.00 | https://www.aliexpress.com/item/1005007469761633.html |
 | JST PH 1x8 PCB mount | 1 | ~$0.20 | (Most only sells in pack more than 1) |
 | JST PH 1x2 PCB mount | 1 | ~$0.20 | (Most only sells in pack more than 1) |
 | M2 mounting screw | 4 | ~$0.50 | (Most only sells in pack more than 4) |
-| 240x320 TFT display | 1 | $13.00 | [https://www.aliexpress.com/item/1005008772378337.html](Aliexpress) |
-| PCB (With Stencil) | 1 | $7.80 | [https://www.aliexpress.com/item/1005012672070003.html](Aliexpress) |
+| 240x320 TFT display | 1 | $13.00 | https://www.aliexpress.com/item/1005008772378337.html] |
+| PCB (With Stencil) | 1 | $7.80 | https://www.aliexpress.com/item/1005012672070003.html] |
 | 3D Printing | 1 | ~$10.00 | - |
-
-This list matches the current BOM in [BOM.csv](BOM.csv).
 
 ## Firmware
 
@@ -72,6 +72,25 @@ The device starts in a menu screen and offers:
 5. High score screen
 
 The macro pad mode sends keyboard shortcuts and media commands over BLE to a paired host.
+
+### Images
+
+<img width="639" height="514" alt="image" src="https://github.com/user-attachments/assets/9ca5af01-37e7-4671-b192-bb18442b4738" />
+
+### PCB
+
+<img width="536" height="290" alt="image" src="https://github.com/user-attachments/assets/70b1fa88-0bb1-45e5-980e-0a4f7833ea42" />
+
+<img width="743" height="408" alt="image" src="https://github.com/user-attachments/assets/d847e6ce-83a7-4142-8c2f-2df351136e56" />
+
+### CAD
+
+<img width="742" height="456" alt="image" src="https://github.com/user-attachments/assets/cfe67569-54e2-42b3-bfcb-9971102f0fe1" />
+
+<img width="762" height="497" alt="image" src="https://github.com/user-attachments/assets/b458df4b-6dec-4d68-a9b0-f299f5afe3b5" />
+
+
+### Schematic
 
 ## License
 
