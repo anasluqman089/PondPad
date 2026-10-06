@@ -400,7 +400,15 @@ void headerTick(uint32_t now) {
 }
 
 void suppressHeld() {
-  for (uint8_t i = 0; i < 5; i++) if (ks[i].down) ks[i].longFired = true;
+  uint32_t now = millis();
+  for (uint8_t i = 0; i < 5; i++) {
+    bool raw = (digitalRead(KEY_PINS[i]) == LOW);
+    ks[i].down = raw;
+    ks[i].rawLast = raw;
+    ks[i].rawChangedAt = now;
+    ks[i].downSince = now;
+    ks[i].longFired = true;
+  }
 }
 
 
@@ -580,7 +588,13 @@ void macroRelease(uint8_t i) {
   drawArcadeButton(i, false);
   if (ks[i].longFired) return;
 
-  runAction(i);
+  bool sent = false;
+  if (bleKeyboard.isConnected()) {
+    runAction(i);
+    sent = true;
+  }
+
+  if (!sent) return;
 
   uint32_t now = millis();
   comboCount = (now - lastComboAt < 2500 && comboCount < 250) ? comboCount + 1 : 1;
